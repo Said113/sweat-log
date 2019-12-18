@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  height: 100vh;
+  background: linear-gradient(to bottom, #263238 50%, whitesmoke 50%);
+}
+
+.week {
+  color: #263238;
+  background-color: white;
+  margin: 0.75em auto 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 70vh;
+  border-radius: 20% 30% / 7% 15%;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+  padding: 1em;
+  /*box-shadow: 2px 2px 2px #78909c;*/
+}
+
+@media (max-width: 675px) {
+  .week {
+    flex-direction: column;
+  }
+}
+
+.day {
+  margin: 0 0.5em;
+}
+
+nav {
+  color: #eceff1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263238;
+  padding-left: 2em;
+  padding-right: 2em;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #37474f;
+  font-size: 1.2em;
+}
+
+.NewWorkout {
+  display: flex;
+  flex-direction: row;
+}
+
+.NewWorkout-input {
+  width: 90%;
+}
+
+.WorkoutsList {
+  width: 100%;
+  max-width: 200px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.Workout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.WorkoutCheckAndDesc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: start;
+}
+
+.day {
+  font-size: 0.8em;
+  color: #37474f;
+}
+
+.date {
+  font-size: 1.25em;
+  color: #37474f;
+}
+.logo {
+
+}
