@@ -1,0 +1,15 @@
+
+* Database: Postgres with 1 table of workouts
+  The columns are: id (use uuid library?), day, name, done
+
+
+* Endpoints: create 4 endpoints to get the basic resource which is a workout (workouts)
+** GET /workouts/2019/12/8
+   returns a JSON with an array of workouts for that day
+   each workout is an object with properties name (string) and done (boolean)
+** POST /workouts/2019/12/8 { name: "whatever", done: false }
+   creates a new workout with the content of the JSON in the request body
+** PUT /workouts/2019/12/8/id
+   updates the state of the workout - at this point only change done from false to true
+** DELETE /workouts/2019/12/8/id
+   deletes the specific workout from the database
